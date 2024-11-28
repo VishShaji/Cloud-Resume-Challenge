@@ -229,12 +229,39 @@ footer {
 }
 
 .visitor-counter {
-    font-size: 1rem;
-    color: #666;
-    background-color: rgba(100, 255, 218, 0.1);
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    background: linear-gradient(145deg, #f6f8fa, #e8eaed);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.visitor-counter p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #2d333b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.visitor-counter #visitor-count {
+    font-weight: bold;
+    color: #0366d6;
+    background: #ffffff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    min-width: 50px;
     display: inline-block;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.visitor-counter:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
 @media (max-width: 768px) {
